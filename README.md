@@ -1,11 +1,11 @@
-About pyriemann
-===============
+About pyriemann-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyriemann-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pyriemann.readthedocs.io/en/latest/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyriemann-feedstock/blob/main/LICENSE.txt)
 
 Summary: Biosignals classification with Riemannian Geometry
 
