@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: f1889f3aec02c4148dec5458299ade2b4a0f28063312c00180a8dfeeea9d9b8e
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy
     - numpy !=1.24.0
     - scipy
@@ -47,6 +47,7 @@ test:
     - pyriemann.utils.viz
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
