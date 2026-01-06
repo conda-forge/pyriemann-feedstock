@@ -1,5 +1,5 @@
 {% set name = "pyriemann" %}
-{% set version = "0.9" %}
+{% set version = "0.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 947c52f5f60ffc7bcb7dee5b840d301b80ce7eedb5ed054100e482b295599803
+  sha256: 6debfa8cb58677ea3812f250cb50f6ef194f67b109eda19797467fbcecca9c0a
 
 build:
   noarch: python
