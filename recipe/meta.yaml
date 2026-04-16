@@ -21,15 +21,11 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - numpy
-    - numpy !=1.24.0
+    - numpy >=1.25.0
     - scipy
-    - scikit-learn >=0.17
-    - pandas
+    - scikit-learn >=0.24
     - joblib
-    - mne-base
     - matplotlib-base
-    - seaborn
 
 test:
   imports:
