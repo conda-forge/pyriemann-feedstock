@@ -1,13 +1,13 @@
 {% set name = "pyriemann" %}
-{% set version = "0.10" %}
+{% set version = "0.11" %}
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6debfa8cb58677ea3812f250cb50f6ef194f67b109eda19797467fbcecca9c0a
+  sha256: 852294514032a61171915bf07a38331e5149f5acfdcbc88633451dae71e34a1a
 
 build:
   noarch: python
@@ -21,15 +21,11 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - numpy
-    - numpy !=1.24.0
+    - numpy >=1.25.0
     - scipy
-    - scikit-learn >=0.17
-    - pandas
+    - scikit-learn >=0.24
     - joblib
-    - mne-base
     - matplotlib-base
-    - seaborn
 
 test:
   imports:
