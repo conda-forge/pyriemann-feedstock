@@ -26,6 +26,8 @@ requirements:
     - scikit-learn >=0.24
     - joblib
     - matplotlib-base
+    - array-api-compat >=1.11
+    - array-api-extra >=0.6
 
 test:
   imports:
